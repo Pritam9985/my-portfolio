@@ -1,0 +1,148 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+/* Header Styling */
+header {
+    padding: 60px 20px;
+}
+
+h1 {
+    font-size: 5rem;
+    font-weight: bold;
+}
+
+.highlight {
+    background: linear-gradient(90deg, limegreen, cyan);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Social Icons */
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 25px;
+}
+
+.social-links a {
+    font-size: 3rem;
+    color: white;
+    transition: transform 0.3s, color 0.3s;
+}
+
+.social-links a:hover {
+    transform: scale(1.2);
+    color: limegreen;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    justify-content: center;
+    padding: 50px 0;
+}
+
+.about-container {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    max-width: 900px;
+}
+
+.profile-img {
+    width: 350px;
+    height: 350px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.5);
+    transition: transform 0.5s;
+}
+
+.profile-img:hover {
+    transform: scale(1.1);
+}
+
+.about-text {
+    text-align: left;
+}
+
+.about ul {
+    list-style: none;
+    padding: 0;
+}
+
+.about li {
+    margin: 5px 0;
+}
+/* Highlighted "Web Developer" */
+.highlight-text {
+    background: linear-gradient(90deg, limegreen, cyan);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+/* Bullet Points in About Section */
+.about-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.about-list li {
+    font-size: 1.2rem;
+    margin: 5px 0;
+}
+
+/* Skills Section */
+.skills {
+    padding: 50px 0;
+}
+
+.skills-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 20px;
+    max-width: 900px;
+    margin: auto;
+}
+
+.skill-box {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.3s, background 0.3s;
+    font-size: 1.2rem;
+}
+
+.skill-box i {
+    font-size: 2.5rem;
+    color: limegreen;
+}
+
+.skill-box:hover {
+    background: limegreen;
+    transform: scale(1.1);
+    color: black;
+}
+
+/* Footer */
+footer {
+    padding: 20px;
+    font-size: 1.1rem;
+}
+
+/* Glassmorphism Effect */
+.skill-box {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
