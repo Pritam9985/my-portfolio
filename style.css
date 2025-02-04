@@ -22,7 +22,8 @@ h1 {
 /* Mobile View Adjustments */
 @media (max-width: 480px) {
     h1 {
-        font-size: 2.5rem; /* Smaller heading on mobile */
+        font-size: 2.5rem;
+        /* Smaller heading on mobile */
     }
 }
 
@@ -83,6 +84,7 @@ h1 {
 .about li {
     margin: 5px 0;
 }
+
 /* Highlighted "Web Developer" */
 .highlight-text {
     background: linear-gradient(90deg, limegreen, cyan);
@@ -165,8 +167,10 @@ h1 {
     background: linear-gradient(90deg, limegreen, cyan);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    font-size: 3.5rem; /* Slightly larger for balance */
-    letter-spacing: 1px; /* Adjust space between letters to lengthen it */
+    font-size: 3.5rem;
+    /* Slightly larger for balance */
+    letter-spacing: 1px;
+    /* Adjust space between letters to lengthen it */
 }
 
 /* About Section */
@@ -175,7 +179,8 @@ h1 {
     justify-content: center;
     padding: 50px 0;
     flex-direction: column;
-    align-items: center;  /* Center the whole section */
+    align-items: center;
+    /* Center the whole section */
 }
 
 
@@ -188,4 +193,108 @@ h1 {
     font-weight: bold;
 }
 
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    overflow-x: hidden;
+}
 
+/* Header Styling */
+header {
+    padding: 60px 20px;
+}
+
+/* Name Section with Animated Gradient */
+h1 {
+    font-size: 4rem;
+    font-weight: bold;
+    background: linear-gradient(90deg, limegreen, cyan, magenta);
+    background-size: 300% 300%;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: gradientAnimation 3s infinite alternate;
+}
+
+/* Typing Animation for "Web Developer" */
+#typing-text {
+    display: inline-block;
+    font-size: 2rem;
+    font-weight: bold;
+    border-right: 2px solid white;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s steps(12, end) infinite alternate, blinkCursor 0.7s infinite;
+}
+
+/* Animations */
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    100% {
+        background-position: 100% 50%;
+    }
+}
+
+@keyframes typing {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: 100%;
+    }
+}
+
+@keyframes blinkCursor {
+    50% {
+        border-color: transparent;
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 3rem;
+    }
+
+    #typing-text {
+        font-size: 1.8rem;
+    }
+
+    .about-container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .profile-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(2, 1fr);
+        /* 2-column layout on mobile */
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    #typing-text {
+        font-size: 1.5rem;
+    }
+
+    .skills-container {
+        grid-template-columns: repeat(1, 1fr);
+        /* 1-column layout for very small screens */
+    }
+}
